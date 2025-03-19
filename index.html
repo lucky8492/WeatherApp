@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body class="bg-[url('./weather_background.jpg')] bg-cover text-amber-50">
+  
+    <div class="flex justify-center mt-8 font-bold text-3xl ">Weather APP</div>
+    <!-- placeholder start -->
+    <div id="itemSection" class="flex justify-center mt-14">
+    <div class="bg-black md:w-120 w-90 rounded-3xl  "> 
+    <div class="flex justify-center mt-16">
+      <div class=" flex rounded-4xl  ">
+        <div class=" bg-slate-800 rounded-4xl">
+          <input
+            id="placeholder"
+            class="flex h-12 w-63 md:w-90 md:h-12 focus:outline-none mr-2 ml-2 "
+            type="text"
+            placeholder="Enter your city"
+            autocomplete="off"/>
+        </div>
+        <!-- placeholder end -->
+
+        <!-- button start -->
+        <div id="btn" class="cursor-pointer border rounded-4xl hover:bg-white hover:text-black"><button class="relative flex justify-center mt-2.5 mr-1 cursor-pointer w-20">Search</button>
+        </div>
+     
+      </div>
+    </div>
+
+    <div class="flex justify-center mt-5">
+      <div class="bg-black  md:w-120 w-90 rounded-3xl " id="itemSection">
+
+        <!-- city names -->
+        <div class="mb- mt-2 flex justify-center">
+          <p id="city" class="font-bolds">Your City</p>
+        </div>
+
+        <!-- weather icon container -->
+        <div class="flex justify-center">
+          <img id="icon" class="h-30 w-30 " />
+        </div>
+
+        <!-- weather text  -->
+        <div id="weatherState" class="flex justify-center font-bolds">Weather</div>
+
+         <!-- humidity section -->
+        <div class="flex justify-around">
+          <div class="flex mt-2">
+            <img src="humidity.1jpg.jpg" class="h-9" />
+            <p id="humidityAmt" class="font-bolds">humidity</p>
+          </div>
+       <!-- Wind section -->
+          <div class="flex justify-end m-2">
+            <img src="wind2_icon.jpg" class="h-9 mb-2" />
+            <p id="windAmt" class="font-bolds">wind</p>
+           </div>
+
+         </div>
+
+        </div>
+
+       </div>
+
+    </div>
+
+  </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
